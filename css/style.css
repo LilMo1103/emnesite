@@ -1,0 +1,297 @@
+/* =========================================================
+   style.css  –  udseende: farver, skrifttyper, knapper, borders
+   ========================================================= */
+
+:root {
+  --bg: #050608;
+  --black: #000;
+  --panel: #0f1013;
+  --line: #2b2d31;
+  --green: #12c26a;
+  --blue: #0f5fff;
+  --text: #fff;
+  --muted: #a9adb4;
+  --field: #f1f4f9;
+}
+
+/* ---------- Grundtekst ---------- */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+}
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: var(--black);
+}
+.logo img {
+  background: var(--panel);
+}
+
+.btn-outline,
+.catalog-btn,
+.help {
+  color: var(--green);
+  font-size: 0.9rem;
+}
+
+.catalog-btn,
+.help {
+  border: 1px solid var(--green);
+  padding: 0.4rem 0.9rem;
+}
+.help {
+  border: 0;
+  padding: 0;
+}
+
+.search input,
+.search select {
+  background: var(--field);
+  color: #222;
+  border: 1px solid var(--green);
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+}
+.search select {
+  border-left: 1px solid #c9ced6;
+}
+.search button {
+  background: var(--green);
+  color: #000;
+  border: 1px solid var(--green);
+  font: inherit;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.links a {
+  font-size: 0.85rem;
+}
+
+/* ---------- Kort (forside) ---------- */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+.cat {
+  color: var(--green);
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+.card h3 {
+  font-size: 1.05rem;
+}
+.cond {
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+.card p {
+  font-size: 0.75rem;
+}
+.card-foot {
+  border-top: 1px solid var(--line);
+}
+.price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.card-foot a {
+  font-size: 0.75rem;
+}
+
+/* ---------- Produktside ---------- */
+.gallery img {
+  background: var(--panel);
+}
+.thumbs img {
+  border: 1px solid var(--green);
+}
+
+.info h1 {
+  font-size: 1.9rem;
+}
+.big-price {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.btn-buy {
+  background: var(--blue);
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+.btn-contact {
+  border: 2px solid var(--green);
+  color: var(--green);
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+.delivery-note i {
+  color: var(--green);
+}
+.delivery-note strong {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.delivery-note p {
+  font-size: 0.75rem;
+}
+
+.box {
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+.box h2 {
+  font-size: 1.2rem;
+}
+.box p,
+.box span {
+  font-size: 0.85rem;
+}
+.box p {
+  color: #e6e8eb;
+}
+
+.spec-row {
+  border-bottom: 1px solid var(--line);
+}
+.spec-row:last-child {
+  border-bottom: 0;
+}
+.spec-row span:first-child {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.spec-row span:last-child {
+  font-size: 0.8rem;
+}
+
+.avatar {
+  background: #1a1c20;
+  color: var(--muted);
+}
+.seller strong {
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: block;
+}
+.seller small {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.box .line {
+  border-bottom: 1px solid var(--line);
+  font-size: 0.85rem;
+}
+.box .line:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.box a {
+  font-size: 0.75rem;
+}
+
+/* ---------- Om os ---------- */
+.label {
+  color: var(--green);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about-text h1 {
+  font-size: 2.2rem;
+}
+.about-text p {
+  font-size: 1rem;
+}
+.quote {
+  border-left: 2px solid #1b1d21;
+}
+.quote strong {
+  font-size: 0.95rem;
+}
+
+.step {
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+.step p {
+  font-size: 0.85rem;
+}
+
+.cta {
+  border-top: 1px solid var(--line);
+}
+.cta-btn {
+  background: var(--green);
+  color: #000;
+  font-weight: 700;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--black);
+}
+.foot .logo img {
+  background: var(--panel);
+}
+.foot-links a {
+  font-size: 0.8rem;
+}
+.social a {
+  font-size: 1.1rem;
+}
+.copy {
+  color: var(--green);
+  font-size: 0.7rem;
+}
+
+/* =========================================================
+   Desktop
+   ========================================================= */
+@media (min-width: 900px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  .account {
+    border: 1px solid var(--green);
+  }
+  .account .btn-outline + .btn-outline {
+    border-left: 1px solid var(--green);
+  }
+  .about-text h1 {
+    font-size: 2.8rem;
+  }
+  .info h1 {
+    font-size: 2.2rem;
+  }
+}
